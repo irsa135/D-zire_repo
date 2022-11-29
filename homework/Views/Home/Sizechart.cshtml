@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size_Chart</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+
+            .nav-links ul li {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                padding: 8px 12px;
+            }
+
+        h2 {
+            margin-left: 1cm;
+            font-size: 30px;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: rgb(255, 244, 244);
+            font-weight: bolder;
+        }
+
+        .nav-links ul li a {
+            color: rgb(255, 242, 242);
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+        }
+
+        .nav-links ul li a:hover {
+            color: rgb(180, 65, 12);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: 2cm;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+            ;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <label class="logo">D'ZIRE</label>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="@Url.Action(" Index","Home")" target="_blank">Home</a></li>
+                    <li><a href="@Url.Action(" About","Home")" target="_blank">About</a></li>
+                    <li><a href="@Url.Action(" Blog","Home")" target="_blank">Blog</a></li>
+                    <li><a href="@Url.Action(" Contact","Home")" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </nav><br><br>
+        <h2>Size Chart:-</h2><br>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Size</th>
+                    <th>Color</th>
+                </tr>
+                <tr>
+                    <td>00001</td>
+                    <td>Kurta</td>
+                    <td>1500</td>
+                    <td>Medium</td>
+                    <td>Pink|Blue|Red</td>
+
+                </tr>
+                <tr>
+                    <td>00002</td>
+                    <td>Jackets</td>
+                    <td>3000</td>
+                    <td>Small/Large</td>
+                    <td>Meron|Blue|Grey</td>
+                </tr>
+                <tr>
+                    <td>00003</td>
+                    <td>Trousers</td>
+                    <td>1800</td>
+                    <td>All</td>
+                    <td>Peach|Brown|Yellow</td>
+                </tr>
+                <tr>
+                    <td>00004</td>
+                    <td>Maxi</td>
+                    <td>5000</td>
+                    <td>Medium</td>
+                    <td>Pink|Purple|Red</td>
+                </tr>
+                <tr>
+                    <td>00005</td>
+                    <td>Froks</td>
+                    <td>2500</td>
+                    <td>All</td>
+                    <td>Red|Orange|Black</td>
+                </tr>
+            </table>
+
+        </div>
+
+</body>
+</html>

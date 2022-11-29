@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/assets/css/sig.css">
+
+</head>
+<body>
+    <div class="login-form">
+        <h1>SignIn Form</h1>
+        <form action="#" method="post">
+            <p>User Name</p>
+            <input type="email" required placeholder="xyz@gmail.com">
+            <p>Password</p>
+            <input type="password" required placeholder="Enter password">
+            <button type="submit" onclick="openpopup()" id="btn">Sign In</button>
+            <button type="reset" class="btn">Clear</button>
+            <div class="text">Don't have any account ? <a href="@Url.Action("SignUp","Home")">Sign Up</a></div>
+
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <img src="">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks</p>
+        <button type="button" onclick="closepopup()">OK</button>
+    </div>
+    <script type="text/Javascript">
+        let popup = document.getElementById("popup");
+        function openpopup() {
+            popup.classList.add("open-popup");
+        }
+        function closepopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
